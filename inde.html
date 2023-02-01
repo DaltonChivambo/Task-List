@@ -1,58 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
     <title>Task List</title>
-</head>
-<body>
-    
+  </head>
+  <body>
     <h1>Task List</h1>
     <header>
-        <input id="inputTask" type="text" placeholder="Type the task">
-        <button class="add">Add</button>
+      <input id="inputTask" type="text" placeholder="Type the task" />
+      <button onclick="addTask()" id="btn-add" class="add">Add</button>
     </header>
-
-
-    <main id="areaList">
-        <div class="item">
-            <div class="item-icon">
-                <span class="material-symbols-outlined">
-                    radio_button_unchecked
-                    </span>
-            </div>
-            <div class="item-name">
-                Teste de Tarefa
-            </div>
-            <div class="item-button">
-                <button class="delete"><span class="material-symbols-outlined">
-                    delete
-                    </span>Delete</button>
-            </div>
-        </div>
-
-        <div class="item clicked">
-            <div class="item-icon">
-                <span class="material-symbols-outlined">
-                    check_circle
-                    </span>
-            </div>
-            <div class="item-name">
-                Teste de Tarefa
-            </div>
-            <div class="item-button">
-                <button class="delete"><span class="material-symbols-outlined">
-                    delete
-                    </span>Delete</button>
-            </div>
-        </div>
-    </main>
-
-    
-
+    <main id="areaList"></main>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
